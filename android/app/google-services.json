@@ -1,0 +1,130 @@
+{
+  "project_info": {
+    "project_number": "206519716919",
+    "firebase_url": "https://go2gather-7836c.firebaseio.com",
+    "project_id": "go2gather-7836c",
+    "storage_bucket": "go2gather-7836c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:206519716919:android:938ac904875db6ee",
+        "android_client_info": {
+          "package_name": "com.go2gather"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "206519716919-634fcdkmcr0tdgkc1k398re6m5t91pk4.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.go2gather",
+            "certificate_hash": "9f08fde8e21ce1180f8de6351221e5a0461b1d28"
+          }
+        },
+        {
+          "client_id": "206519716919-v93fl7b6pupffparflkjqpl7f77hpr4h.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyASQmGxt1P_KdBGHc-1fxQBDWutYxITNmg"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "206519716919-v93fl7b6pupffparflkjqpl7f77hpr4h.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:206519716919:android:22913b87571e72b2",
+        "android_client_info": {
+          "package_name": "com.go2gatherfinal"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "206519716919-ouv0hr88u6ai22e8u7260p5mutp5uqaa.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.go2gatherfinal",
+            "certificate_hash": "9f08fde8e21ce1180f8de6351221e5a0461b1d28"
+          }
+        },
+        {
+          "client_id": "206519716919-v93fl7b6pupffparflkjqpl7f77hpr4h.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyASQmGxt1P_KdBGHc-1fxQBDWutYxITNmg"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "206519716919-v93fl7b6pupffparflkjqpl7f77hpr4h.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:206519716919:android:1b7335b08844a101",
+        "android_client_info": {
+          "package_name": "com.go2gatherrevised"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "206519716919-v93fl7b6pupffparflkjqpl7f77hpr4h.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyASQmGxt1P_KdBGHc-1fxQBDWutYxITNmg"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

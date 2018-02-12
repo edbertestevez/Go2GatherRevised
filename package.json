@@ -1,0 +1,47 @@
+{
+  "name": "Go2GatherRevised",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node node_modules/react-native/local-cli/cli.js start",
+    "test": "jest"
+  },
+  "rnpm": {
+    "assets": [
+      "./assets/fonts/"
+    ]
+  },
+  "dependencies": {
+    "firebase": "^4.9.1",
+    "moment": "^2.20.1",
+    "native-base": "^2.3.8",
+    "react": "16.2.0",
+    "react-moment": "^0.7.0",
+    "react-native": "^0.51.0",
+    "react-native-datepicker": "^1.6.0",
+    "react-native-exit-app": "^1.0.0",
+    "react-native-geocoding": "^0.2.0",
+    "react-native-google-places": "^2.4.2",
+    "react-native-google-places-autocomplete": "^1.3.6",
+    "react-native-google-signin": "^0.12.0",
+    "react-native-maps": "^0.20.0",
+    "react-native-maps-directions": "^1.4.1",
+    "react-native-responsive-image": "^2.2.1",
+    "react-native-select-multiple": "^1.2.0",
+    "react-native-vector-icons": "^4.5.0",
+    "react-navigation": "^1.0.0-beta.23",
+    "react-redux": "^5.0.6",
+    "redux": "^3.7.2",
+    "redux-logger": "^3.0.6",
+    "redux-thunk": "^2.2.0"
+  },
+  "devDependencies": {
+    "babel-jest": "22.2.2",
+    "babel-preset-react-native": "4.0.0",
+    "jest": "22.2.2",
+    "react-test-renderer": "16.2.0"
+  },
+  "jest": {
+    "preset": "react-native"
+  }
+}
