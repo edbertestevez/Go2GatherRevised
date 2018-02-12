@@ -48,6 +48,22 @@ export function func_googleSignin(){
 
 }
 
+export function func_googleSignout(){
+  return (dispatch) => {
+   GoogleSignin.signOut()
+    .then(() => {
+      firebase.auth().signOut().then(function() {
+      console.log("Logged out successfully");
+    }, function(error) {
+      // An error happened.
+    });
+    })
+    .catch((err) => {
+      console.log(err);
+    });
+    }
+}
+
 function loginChecking(condition){
   return{
     type: types.CHECK_LOGIN,
