@@ -10,11 +10,11 @@ import { connect } from 'react-redux'
 import {bindActionCreators} from 'redux';
 import {ActionCreators} from '../../actions';
 
-class Home extends Component {
+class Meetups extends Component {
   
   static navigationOptions = {
     tabBarIcon: ({ tintColor }) => (
-      <Icon name="home" style={{fontSize: 26, color: tintColor}}/>
+      <Icon name="people" style={{fontSize: 28, color: tintColor}}/>
     ),
     drawerLockMode: 'locked-closed'
   }
@@ -23,10 +23,7 @@ class Home extends Component {
     return (
       <Container>
     	<Content>
-    		<Button iconLeft full danger onPress={()=>this.props.actions.func_googleSignout()}>
-    			<Icon name="home"/>
-    			<Text>Logout</Text>
-    		</Button>
+    		<Text>Meetups</Text>
     	</Content>
       </Container>
     );
@@ -43,4 +40,4 @@ const mapDispatchToProps = dispatch => ({
   actions: bindActionCreators(ActionCreators, dispatch)
 })
 
-export default connect(mapStateToProps,mapDispatchToProps)(Home);
+export default connect(mapStateToProps,mapDispatchToProps)(Meetups);

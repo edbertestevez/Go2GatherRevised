@@ -11,9 +11,9 @@ import styles from '../styles/styles';
 //FIREBASE
 import firebaseApp from '../config/firebase';
 import * as firebase from 'firebase';
-import {GoogleSignin} from 'react-native-google-signin';
 import ResponsiveImage from 'react-native-responsive-image';
 import {Spinner} from 'native-base';
+import {GoogleSignin} from 'react-native-google-signin';
 
 class SplashScreen extends Component {
 	checkLogged(action){
@@ -28,12 +28,18 @@ class SplashScreen extends Component {
 						var user_name = snapshot.child("name").val();
 						action.updateAccount(snapshot.key,snapshot.val());
 						console.log('user logged');
-						// //DRAWER INSTEAD OF HOME KAY AMO MANA ANG IYA DEFAULT STACK SA DRAWER ANG HOME
-						// route="HomeMain";
-						// setTimeout(()=>{navigate(route),ToastAndroid.show("Welcome, "+user_name+"!",ToastAndroid.SHORT)}, 1500);
+						setTimeout(()=>{navigate("Main"),ToastAndroid.show("Welcome, "+user_name+"!",ToastAndroid.SHORT)}, 1500);
 						console.log('not logged');
-		      	route="Login";
-		      	setTimeout(()=>navigate(route), 1000);
+					}else{
+						const resetNavigation = NavigationActions.reset({
+	                      index: 0,
+	                      actions: [
+	                        NavigationActions.navigate({
+	                          routeName: 'Login'
+	                        })
+	                      ]
+	                    });
+				      	setTimeout(()=>{that.props.navigation.dispatch(resetNavigation)}, 500);
 					}
 				})
 
@@ -42,12 +48,18 @@ class SplashScreen extends Component {
 						action.updateAccount(snapshot.key,snapshot.val());
 					})
 				})
-					
-				
 		    }else{
 		      	console.log('not logged');
-		      	route="Login";
-		      	setTimeout(()=>navigate(route), 1000);
+		      	console.log("DISPATCHES", that.props);
+		      	const resetNavigation = NavigationActions.reset({
+	                index: 0,
+	                actions: [
+	                    NavigationActions.navigate({
+	                     	routeName: 'Login'
+	                    })
+	                ]
+	            });
+				setTimeout(()=>{that.props.navigation.dispatch(resetNavigation)}, 2000);
 		    }
 		});
 	}
@@ -55,7 +67,7 @@ class SplashScreen extends Component {
 	componentWillMount(){
 		console.log("SPLASH NAVIGATION ROUTES", this.props.state.nav)
 		setTimeout(()=>this.checkLogged(this.props.actions), 1000);
-		
+
 		GoogleSignin.configure({
 	      //iosClientId: "<FROM DEVELOPER CONSOLE>", // only for iOS
 	      webClientId: "206519716919-v93fl7b6pupffparflkjqpl7f77hpr4h.apps.googleusercontent.com",

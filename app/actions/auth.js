@@ -1,4 +1,8 @@
 import * as types from './types';
+import {GoogleSignin} from 'react-native-google-signin';
+import firebaseApp from '../config/firebase';
+import * as firebase from 'firebase';
+import {ToastAndroid} from 'react-native';
 
 export function func_googleSignin(){
   return (dispatch) => {

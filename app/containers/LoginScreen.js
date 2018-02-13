@@ -30,7 +30,7 @@ componentWillMount(){
 render(){
   
   var loader = <View>
-    <Spinner color='#00aaaa' style={{marginTop:-24}}/>
+    <Spinner color='#00aaaa' style={{marginTop:-20}}/>
       <Text style={{color: 'white', fontSize:12, marginTop:-15}}>Logging in account . . </Text>
     </View>
   
