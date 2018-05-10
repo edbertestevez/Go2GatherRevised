@@ -9,12 +9,13 @@ import {Text, Button, Container, Header, Content, Left, Right, Footer, Tabs, Ico
 import { connect } from 'react-redux'
 import {bindActionCreators} from 'redux';
 import {ActionCreators} from '../../actions';
+import FontAwesome from 'react-native-vector-icons/FontAwesome';
 
 class SearchMain extends Component {
   
   static navigationOptions = {
     tabBarIcon: ({ tintColor }) => (
-      <Icon name="people" style={{fontSize: 28, color: tintColor}}/>
+      <FontAwesome name="search" style={{fontSize: 22, color: tintColor}}/>
     ),
     drawerLockMode: 'locked-closed'
   }

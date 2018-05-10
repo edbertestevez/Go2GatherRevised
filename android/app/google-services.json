@@ -15,6 +15,14 @@
       },
       "oauth_client": [
         {
+          "client_id": "206519716919-h6blnorljik8cdq3ak1o0s0tlk9bvghb.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.go2gather",
+            "certificate_hash": "f956781e81e2133245e93bdca7e2affb5394d130"
+          }
+        },
+        {
           "client_id": "206519716919-634fcdkmcr0tdgkc1k398re6m5t91pk4.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
@@ -39,6 +47,13 @@
         "appinvite_service": {
           "status": 2,
           "other_platform_oauth_client": [
+            {
+              "client_id": "206519716919-3na384vamb02rj9tcvcr07vg6c87d7gt.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.go2gatherrevised.ios"
+              }
+            },
             {
               "client_id": "206519716919-v93fl7b6pupffparflkjqpl7f77hpr4h.apps.googleusercontent.com",
               "client_type": 3
@@ -84,6 +99,13 @@
           "status": 2,
           "other_platform_oauth_client": [
             {
+              "client_id": "206519716919-3na384vamb02rj9tcvcr07vg6c87d7gt.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.go2gatherrevised.ios"
+              }
+            },
+            {
               "client_id": "206519716919-v93fl7b6pupffparflkjqpl7f77hpr4h.apps.googleusercontent.com",
               "client_type": 3
             }
@@ -103,6 +125,30 @@
       },
       "oauth_client": [
         {
+          "client_id": "206519716919-kffogsflna1ogt5o4ki8huv1mn7lg6ul.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.go2gatherrevised",
+            "certificate_hash": "f956781e81e2133245e93bdca7e2affb5394d130"
+          }
+        },
+        {
+          "client_id": "206519716919-cionmogm90rv5620hhanutaba0a86m0d.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.go2gatherrevised",
+            "certificate_hash": "16467a629256852efaaacc8dd6449b4fd2a24ae5"
+          }
+        },
+        {
+          "client_id": "206519716919-kla94nbp815b65rutb0htsjcf7r10abd.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.go2gatherrevised",
+            "certificate_hash": "9f08fde8e21ce1180f8de6351221e5a0461b1d28"
+          }
+        },
+        {
           "client_id": "206519716919-v93fl7b6pupffparflkjqpl7f77hpr4h.apps.googleusercontent.com",
           "client_type": 3
         }
@@ -117,8 +163,20 @@
           "status": 1
         },
         "appinvite_service": {
-          "status": 1,
-          "other_platform_oauth_client": []
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "206519716919-3na384vamb02rj9tcvcr07vg6c87d7gt.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.go2gatherrevised.ios"
+              }
+            },
+            {
+              "client_id": "206519716919-v93fl7b6pupffparflkjqpl7f77hpr4h.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
         },
         "ads_service": {
           "status": 2

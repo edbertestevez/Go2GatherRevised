@@ -16,6 +16,12 @@ import {Spinner} from 'native-base';
 import {GoogleSignin} from 'react-native-google-signin';
 
 class SplashScreen extends Component {
+	constructor(props) {
+		super(props);
+
+		console.disableYellowBox = true;
+	}
+
 	checkLogged(action){
 		const that = this;
 		const { navigate } = this.props.navigation;
@@ -50,7 +56,7 @@ class SplashScreen extends Component {
 				})
 		    }else{
 		      	console.log('not logged');
-		      	console.log("DISPATCHES", that.props);
+		      	//console.log("DISPATCHES", that.props);
 		      	const resetNavigation = NavigationActions.reset({
 	                index: 0,
 	                actions: [
@@ -65,6 +71,20 @@ class SplashScreen extends Component {
 	}
 
 	componentWillMount(){
+		//get location
+	    navigator.geolocation.getCurrentPosition(
+	        (position) => {
+	          //console.log("POSITION",position);
+	          var initialPosition = {
+	            latitude: position.coords.latitude,
+	            longitude: position.coords.longitude
+	          }
+	          this.props.actions.updateLocation(initialPosition);
+	        },
+	        (error) => console.log(error.message ),
+	        { enableHighAccuracy: false, timeout: 20000, maximumAge: 1000 },
+	    );
+
 		console.log("SPLASH NAVIGATION ROUTES", this.props.state.nav)
 		setTimeout(()=>this.checkLogged(this.props.actions), 1000);
 
@@ -72,6 +92,8 @@ class SplashScreen extends Component {
 	      //iosClientId: "<FROM DEVELOPER CONSOLE>", // only for iOS
 	      webClientId: "206519716919-v93fl7b6pupffparflkjqpl7f77hpr4h.apps.googleusercontent.com",
 	    })
+
+
 	}
 	
 

@@ -3,6 +3,9 @@ import { combineReducers } from 'redux';
 
 //reducers
 import auth from './auth';
+import location from './location';
+import meetups from './meetups';
+import friends from './friends';
 
 const AppNavigator = Routes;
 
@@ -14,7 +17,10 @@ const navReducer = (state, action) => {
 
 const rootReducer = combineReducers({
 	nav: navReducer,
-	auth
+	auth,
+	location,
+	meetups,
+	friends
 })
 
 export default rootReducer;
