@@ -60,7 +60,7 @@ class Meetups extends Component {
 
         <TouchableOpacity style={styles.headerRightLogo}>
           <Ionicons name="md-settings" color="white" size={27}
-          onPress={()=>alert("Settings")}/>
+          onPress={()=>navigate("Settings")}/>
         </TouchableOpacity>
        
       </View>,
