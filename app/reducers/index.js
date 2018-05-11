@@ -6,6 +6,7 @@ import auth from './auth';
 import location from './location';
 import meetups from './meetups';
 import friends from './friends';
+import settings from './settings';
 
 const AppNavigator = Routes;
 
@@ -20,7 +21,8 @@ const rootReducer = combineReducers({
 	auth,
 	location,
 	meetups,
-	friends
+	friends,
+	settings
 })
 
 export default rootReducer;

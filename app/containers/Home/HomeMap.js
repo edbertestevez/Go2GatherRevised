@@ -122,17 +122,7 @@ class HomeMap extends Component {
 		}else{
 			var fabIcons1 = null;
 			var fabIcons2 = null;
-			var fabIcons3 =  <Fab
-			        style={{backgroundColor:"#f2f2f2",zIndex:5, marginBottom:65}}
-			        position="bottomRight"
-			        //onPress={()=>this.props.actions.func_googleSignout()}
-			        onPress={()=>console.log(this.props.friends.friendRequests.length)}
-			        >
- 			       <View style={{alignItems:'center'}}> 
-			        	<Feather name="map-pin" style={{ color:"#4f4f4f", fontSize:20}}/>
-			    		<Text style={{fontSize:12, textAlign:'center'}}>LOGOUT</Text>
-			    	</View>
-			    </Fab>;
+			var fabIcons3 =  null;
 			var fabIcons4 =
 			    <Fab
 			        style={{backgroundColor: this.state.locationFocus ? "#1b5454" : "#f2f2f2" ,zIndex:5}}
@@ -147,7 +137,7 @@ class HomeMap extends Component {
 				<MapView
 					ref={component => {this._map = component;}}
 					style={StyleSheet.absoluteFill}	
-					mapType="standard"
+					mapType={this.props.settings.mapStyle}
 		        	initialRegion={{
 			            latitude: this.props.user_location.latitude,
 			            longitude: this.props.user_location.longitude,
@@ -218,7 +208,8 @@ class HomeMap extends Component {
 const mapStateToProps = state => ({
   user_location: state.location.user_location,
   all_location: state.location,
-  meetups: state.meetups
+  meetups: state.meetups,
+  settings: state.settings
 });
  
 const mapDispatchToProps = dispatch => ({

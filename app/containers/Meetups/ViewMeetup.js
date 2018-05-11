@@ -208,7 +208,7 @@ class ViewMeetup extends Component {
 			          	<List>
 			          		{this.state.goingData.map((record,index)=>{
 			          			return(
-			          				<ListItem key={index}>
+			          				<ListItem key={index} onPress={this.props.account.uid != record.key ? ()=>this.props.navigation.navigate("OtherProfile",{info:record}):null}>
 						              <Left style={{flex:1}}>
 						                <Thumbnail width={50} height={50} source={{uri: record.photo}} />
 						              </Left>

@@ -191,4 +191,22 @@ module.exports = StyleSheet.create({
     selectRoundButton:{
     paddingLeft:30, paddingRight:30, marginRight:5
   },
+  //PROFILE
+  profileImage:{
+    width: 120,
+    height: 120,
+    borderRadius: 110,
+    zIndex:10,
+    marginVertical: 20,
+  },
+  user_name:{
+    fontSize:20,
+    color: '#fff',
+    //marginTop: 20,
+    marginBottom: 20,
+    fontWeight:'bold'
+  },
+  roundButtonNoIcon:{
+    paddingLeft:25, paddingRight:25, marginBottom:20,marginRight:8
+  },
 });

@@ -8,6 +8,7 @@ import LoginScreen from '../containers/LoginScreen';
 import Home from '../containers/Home/Home';
 import Meetups from '../containers/Meetups/Meetups';
 import Profile from '../containers/Profile/Profile';
+import OtherProfile from '../containers/Profile/OtherProfile';
 import Search from '../containers/Search/SearchMain';
 import NewMeetup from '../containers/NewMeetup/NewMeetup';
 import ViewMeetup from '../containers/Meetups/ViewMeetup';
@@ -18,6 +19,7 @@ import EditMeetup from '../containers/Meetups/EditMeetup';
 //REQUESTS
 import MeetupRequests from '../containers/Requests/MeetupRequests';
 import FriendRequests from '../containers/Requests/FriendRequests';
+import Settings from '../containers/Settings';
 
 import {Image} from 'react-native';
 import {Icon, Text} from 'native-base';
@@ -119,6 +121,18 @@ const Stacks = StackNavigator({
   },
   FriendRequests: {
     screen: FriendRequests,
+    navigationOptions:{
+      header: null
+    }
+  },
+  OtherProfile: {
+    screen: OtherProfile,
+    navigationOptions:{
+      header: null
+    }
+  },
+  Settings: {
+    screen: Settings,
     navigationOptions:{
       header: null
     }
